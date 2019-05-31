@@ -42,6 +42,7 @@
         let degCInt = Math.floor(degC);
         let degF = degC * 1.8 + 32;
         let degFInt = Math.floor(degF);
+        console.log("Conditions: " + condition + ", " + "Temperature: " + degF + ", so there's that.";
         let weatherBox = document.getElementById("weather");
         weatherBox.innerHTML = "<p>" + degCInt + "&#176; C / " + degFInt + "&#176; F</p><p>" + condition + "</p>";
     }
