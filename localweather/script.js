@@ -1,5 +1,4 @@
 (function() {
-    let httpRequest, conditions;
     let url = "http://api.openweathermap.org/data/2.5/forecast?id=4543762";
     let apiKey = "3118da63bc3ab70397a7e97b0cea4af8";
     makeRequest();
@@ -20,13 +19,25 @@
     
     
     function makeRequest() {
-        httpRequest = new XMLHttpRequest();
-        httpRequest.onreadystatechange = responseMethod();
-        httpRequest.open("GET", url + "&APPID=" + apiKey);
-        httpRequest.send();
-    }
+        let xhr = new XMLHttpRequest(),
+            method = "GET",
+            url = "http://api.openweathermap.org/data/2.5/forecast?id=4543762&APPID=" + apiKey;
+        
+        xhr.open(method, url, true);
+        xhr.onreadystatechange = function () {
+            if(xhr.readyState === 4 && xhr.status === 200) {
+            console.log(xhr.responseText);
+            }
+        };
+        xhr.send();
+        
+        
+//        httpRequest.onreadystatechange = function ()
+//        httpRequest.open("GET", url + "&APPID=" + apiKey);
+//        httpRequest.send();
+//    }
     
-    function responseMethod() {
+/*    function responseMethod() {
         if (httpRequest.readyState === 4) {
             if (httpRequest.status === 200) {
                 updateUISuccess(httpRequest.responseText);
@@ -34,7 +45,7 @@
             alert("page done loading!");
         }
     }
-    //handle xhr success
+ */   //handle xhr success
     function updateUISuccess(responseText) {
         let response = JSON.parse(responseText);
         let conditions = response.weather[0].main;
