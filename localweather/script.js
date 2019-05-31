@@ -1,8 +1,7 @@
 (function() {
-    
     var httpRequest;
     let url = "http://api.openweathermap.org/data/2.5/forecast?id=4543762";
-    var apiKey = "VR2K2MXEOW4DPSXURRU4";
+    var apiKey = "3118da63bc3ab70397a7e97b0cea4af8";
     makeRequest();
     
     (function getLocation() {
@@ -23,7 +22,7 @@
     function makeRequest() {
         httpRequest = new XMLHttpRequest();
         httpRequest.onreadystatechange = responseMethod;
-        httpRequest.open("GET", url + "&appid=" + apiKey);
+        httpRequest.open("GET", url + "&APPID=" + apiKey);
         httpRequest.send();
     }
     
