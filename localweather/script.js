@@ -23,7 +23,7 @@
             method = "GET",
             url = "http://api.openweathermap.org/data/2.5/forecast?id=4543762&APPID=" + apiKey;
         
-        xhr.open(method, url, true);
+        xhr.open(method, url, True);
         xhr.onreadystatechange = function () {
             if(xhr.readyState === 4 && xhr.status === 200) {
             console.log(xhr.responseText);
