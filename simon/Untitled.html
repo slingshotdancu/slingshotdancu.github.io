@@ -1,0 +1,185 @@
+let game = new Phaser.Game(800, 800, Phaser.CANVAS, '', { preload: preload, create: create, update: update });
+
+function preload () {
+game.load.image('background', 'assets/bgLayer.png');
+game.load.image('greyLayer', 'assets/Layer-2.png');
+game.load.image('redButton', 'assets/redLayer.png');
+game.load.image('blueButton', 'assets/blueLayer.png');
+game.load.image('greenButton', 'assets/greenLayer.png');
+game.load.image('yellowButton', 'assets/yellowLayer.png');
+game.load.image('yellowCircleButton', 'assets/leftButton.png');
+game.load.image('greenCircleButton', 'assets/centerGreenButton.png');
+game.load.image('redCircleButton', 'assets/centerRedButton.png');
+game.load.image('00', 'assets/num0.png');
+game.load.image('01', 'assets/num1.png');
+game.load.image('02', 'assets/num2.png');
+game.load.image('03', 'assets/num3.png');
+game.load.image('04', 'assets/num4.png');
+game.load.image('05', 'assets/num5.png');
+game.load.image('06', 'assets/num6.png');
+game.load.image('07', 'assets/num7.png');
+game.load.image('08', 'assets/num8.png');
+game.load.image('09', 'assets/num9.png');
+game.load.audio('gsfx', ['audio/green.mp3', 'audio/green.ogg']);
+game.load.audio('rsfx', ['audio/red.mp3', 'audio/red.ogg']);
+game.load.audio('bsfx', ['audio/blue.mp3', 'audio/blue.ogg']);
+game.load.audio('ysfx', ['audio/yellow.mp3', 'audio/yellow.ogg']);
+//add buzzer sound?
+}
+let player = {};
+player.moves = [];
+let comp = {};
+comp.moves = [];
+let counter, turnNumber;
+let blueButton, greenButton, redButton, yellowButton;
+let blueAudio, greenAudio, redAudio, yellowAudio;
+let startButton, strictModeButton, resetButton;
+
+function create () {
+game.add.tileSprite(0, 0, 800, 800, 'background');
+game.add.image(257, 258, 'greyLayer');
+counter = game.add.image(378, 435, '00');
+
+blueButton = game.add.image(412, 412, 'blueButton');
+greenButton = game.add.image(28, 31, 'greenButton');
+redButton = game.add.image(412, 31, 'redButton');
+yellowButton = game.add.image(28, 412, 'yellowButton');
+
+blueButton.anchor.set(0);
+greenButton.anchor.set(0);
+redButton.anchor.set(0);
+yellowButton.anchor.set(0);
+
+blueButton.inputEnabled = true;
+greenButton.inputEnabled = true;
+redButton.inputEnabled =  true;
+yellowButton.inputEnabled = true;
+
+blueButton.events.onInputDown.add(onBlueDown, this);
+blueButton.events.onInputUp.add(onBlueUp, this);
+greenButton.events.onInputDown.add(onGreenDown, this);
+greenButton.events.onInputUp.add(onGreenUp, this);
+redButton.events.onInputDown.add(onRedDown, this);
+redButton.events.onInputUp.add(onRedUp, this);
+yellowButton.events.onInputDown.add(onYellowDown, this);
+yellowButton.events.onInputUp.add(onYellowUp, this);
+
+greenAudio = game.add.audio('gsfx');
+redAudio = game.add.audio('rsfx');
+blueAudio = game.add.audio('bsfx');
+yellowAudio = game.add.audio('ysfx');
+
+startButton = game.add.image(385, 500, 'greenCircleButton');
+startButton.anchor.set(0);
+startButton.inputEnabled = true;
+startButton.events.onInputDown.add(onStartButtonDown, this);
+startButton.events.onInputUp.add(onStartButtonUp, this);
+
+strictModeButton = game.add.image(455, 500, 'yellowCircleButton');
+strictModeButton.anchor.set(0);
+strictModeButton.inputEnabled = true;
+strictModeButton.events.onInputDown.add(onStrictModeButtonDown, this);
+strictModeButton.events.onInputUp.add(onStrictModeButtonUp, this);
+
+resetButton = game.add.image(315, 500, 'redCircleButton');
+resetButton.anchor.set(0);
+resetButton.inputEnabled = true;
+resetButton.events.onInputDown.add(onResetButtonDown, this);
+resetButton.events.onInputUp.add(onResetButtonUp, this);
+
+}
+function update () {
+
+}
+function onBlueDown () {
+    blueAudio.play();
+    blueButton.alpha = 0.3;
+}
+function onBlueUp () {
+    blueButton.alpha = 1;
+}
+function onRedDown () {
+    redAudio.play();
+    redButton.alpha = 0.3;
+}
+function onRedUp () {
+    redButton.alpha = 1;
+}
+function onGreenDown () {
+    greenAudio.play();
+    greenButton.alpha = 0.3;
+}
+function onGreenUp () {
+    greenButton.alpha = 1;
+}
+function onYellowDown () {
+    yellowAudio.play();
+    yellowButton.alpha = 0.3;
+}
+function onYellowUp () {
+    yellowButton.alpha = 1;
+}
+function onStartButtonDown () {
+    increaseTurnNumber();
+}
+function onStartButtonUp () {
+
+}
+function onStrictModeButtonDown () {
+
+}
+function onStrictModeButtonUp () {
+
+}
+function onResetButtonDown () {
+
+}
+function onResetButtonUp () {
+
+}
+function increaseTurnNumber () {
+turnNumber = turnNumber + 1;
+switch (turnNumber) {
+    case 0: counter.destroy();
+    counter = game.add.sprite(378, 435, '00');
+    compsTurn();
+    break;
+    case 1: counter.destroy();
+    counter = game.add.sprite(378, 435, '01');
+    compsTurn();
+    break;
+    case 2: counter.destroy();
+    counter = game.add.sprite(378, 435, '02');
+    compsTurn();
+    break;
+    case 3: counter.destroy();
+    counter = game.add.sprite(378, 435, '03');
+    compsTurn();
+    break;
+    case 4: counter.destroy();
+    counter = game.add.sprite(378, 435, '04');
+    compsTurn();
+    break;
+    case 5: counter.destroy();
+    counter = game.add.sprite(378, 435, '05');
+    compsTurn();
+    break;
+    case 6: counter.destroy();
+    counter = game.add.sprite(378, 435, '06');
+    compsTurn();
+    break;
+    case 7: counter.destroy();
+    counter = game.add.sprite(378, 435, '07');
+    compsTurn();
+    break;
+    case 8: counter.destroy();
+    counter = game.add.sprite(378, 435, '08');
+    compsTurn();
+    break;
+    case 9: counter.destroy();
+    counter = game.add.sprite(378, 435, '09');
+    compsTurn();
+    break;
+    }
+}
+
