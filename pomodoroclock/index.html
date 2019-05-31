@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">    
+    </head>
+    <div class="container-fluid">
+        <body>
+        <h1 id="title" class="text-center">Pomodoro Clock</h1>
+            <div class="row">
+                <div class="col-md-2"></div>
+                
+                <div class="col-md-8 text-center"><button id="cButton" onclick="startTimer()"><canvas class="cDefault" id="c" width="500%" height="400%"></canvas></button>
+                </div>
+            
+                <div class="col-md-2">
+                </div></div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <button class="btn btn-default btn-lg col-md-2" id="startTimerID" onclick="startTimer()">Start</button>
+            <button class="btn btn-default btn-lg col-md-2" id="resetTimerID" onclick="resetTimer()">Reset</button>
+            <button class="btn btn-default btn-lg col-md-2" id="stopTimerID" onclick="stopTimer()">Stop</button>
+                    <div class="col-md-3"></div>
+
+            </div>
+        
+            <p id="instructions" class="text-center">Adjust time below with + and - Click start to start timer</p>
+
+            <!--left side -->
+        <div class="row">
+                    <div class="col-md-3"></div>
+        <button id="leftMins" class="btn-xs btn-default col-xs-1" onclick="subOneMin()">-</button>
+        <span id="dispNumMins" class="btn-xs col-xs-1 text-center">25</span>        
+        <button id="rightMins" class="btn-xs btn-default col-xs-1" onclick="addOneMin()">+</button>
+        <button id="leftSecs" class="btn-xs btn-default col-xs-1" onclick="subOneSec()">-</button>
+        <span id="dispNumSecs" class="btn-xs col-xs-1 text-center">00</span>        
+        <button id="rightSecs" class="btn-xs btn-default btn-md col-xs-1" onclick="addOneSec()">+</button>
+                    <div class="col-md-3"></div>
+
+            </div>        
+        
+            <div class="row">
+                <div class="col-md-3"></div>
+        
+        <span id="minLabel" class="col-xs-3 text-center">Minutes</span>
+        <span id="secLabel" class="col-xs-3 text-center">Seconds</span> 
+                <div class="col-md-3"></div>
+                </div>
+        
+        <p id="bottom" class="under"> </p>        
+            <script type="text/javascript" src="script.js"></script>    
+        </body>
+    </div>
+</html>
