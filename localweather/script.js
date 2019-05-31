@@ -21,7 +21,7 @@
     
     function makeRequest() {
         httpRequest = new XMLHttpRequest();
-        httpRequest.onreadystatechange = responseMethod;
+        httpRequest.onreadystatechange = responseMethod();
         httpRequest.open("GET", url + "&APPID=" + apiKey);
         httpRequest.send();
     }
