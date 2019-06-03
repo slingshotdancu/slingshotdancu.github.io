@@ -25,15 +25,15 @@
         xhr.onreadystatechange = function () {
             if(xhr.readyState === 4 && xhr.status === 200) {
             console.log(xhr.responseText);
-            updateUISuccess(xhr.responseText);
+        let responseObj = JSON.parse(xhr.responseText);
+            console.log(responseObj);
             }
         };
         xhr.send();
      
      //handle xhr success
     function updateUISuccess(responseText) {
-        let response = JSON.parse(xhr.responseText);
-        console.log(response.cod);
+//        let response = JSON.parse(xhr.responseText);
         let conditions = response.weather[0].main;
         let degC = response.main.temp - 273.15;
         let degCInt = Math.floor(degC);
