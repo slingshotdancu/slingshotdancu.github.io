@@ -17,10 +17,7 @@
         console.log(lat + " " + long);
     }
     
-    
-    
-    
-    function makeRequest() {
+     function makeRequest() {
         let xhr = new XMLHttpRequest();
         let method = "GET";
         let urls = url + "&APPID=" + apiKey;
@@ -31,7 +28,7 @@
             }
         };
         xhr.send();
-        
+     }
         
 //        httpRequest.onreadystatechange = function ()
 //        httpRequest.open("GET", url + "&APPID=" + apiKey);
