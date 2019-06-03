@@ -2,6 +2,8 @@
     let url = "https://api.openweathermap.org/data/2.5/forecast?id=4543762";
     let apiKey = "3118da63bc3ab70397a7e97b0cea4af8";
     let weatherTitle = document.getElementById("weatherTitle");
+    let weatherDescription = document.getElementById("weatherDescription");
+    let weatherTemperature = document.getElementById("weatherTemperature");
 
     makeRequest();
     
@@ -30,6 +32,8 @@
         let responseObj = JSON.parse(xhr.responseText);
             console.log(responseObj.city.name);
             weatherTitle.innerHTML = "<h2>" + responseObj.city.name + "</h2>";
+            weatherDescription.innerHTML = responseObj.list[0].weather[0].description];
+            weatherTemperature.innerHTML = responseObj.list[0].
             }
         };
         xhr.send();
