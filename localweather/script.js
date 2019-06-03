@@ -1,5 +1,5 @@
 (function() {
-    let url = "http://api.openweathermap.org/data/2.5/forecast?id=4543762";
+    let url = "https://api.openweathermap.org/data/2.5/forecast?id=4543762";
     let apiKey = "3118da63bc3ab70397a7e97b0cea4af8";
     makeRequest();
     
@@ -21,7 +21,7 @@
         let xhr = new XMLHttpRequest();
         let method = "GET";
         let urls = url + "&APPID=" + apiKey;
-        xhr.open(method, urls, true);
+        xhr.open(method, urls);
         xhr.onreadystatechange = function () {
             if(xhr.readyState === 4 && xhr.status === 200) {
             console.log(xhr.responseText);
