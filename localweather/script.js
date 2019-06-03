@@ -29,7 +29,7 @@
             }
         };
         xhr.send();
-     }
+     
      //handle xhr success
     function updateUISuccess(responseText) {
         let response = JSON.parse(responseText);
@@ -42,4 +42,5 @@
         let weatherBox = document.getElementById("weather");
         weatherBox.innerHTML = "<p>" + degCInt + "&#176; C / " + degFInt + "&#176; F</p><p>" + condition + "</p>";
     }
+         }
 })();
