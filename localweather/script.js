@@ -26,7 +26,7 @@
             if(xhr.readyState === 4 && xhr.status === 200) {
             console.log(xhr.responseText);
         let responseObj = JSON.parse(xhr.responseText);
-            console.log(responseObj);
+            console.log(responseObj["city"]["name"]);
             }
         };
         xhr.send();
