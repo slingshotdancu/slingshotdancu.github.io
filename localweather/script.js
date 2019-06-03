@@ -25,25 +25,12 @@
         xhr.onreadystatechange = function () {
             if(xhr.readyState === 4 && xhr.status === 200) {
             console.log(xhr.responseText);
+            updateUISuccess(xhr.responseText);
             }
         };
         xhr.send();
      }
-        
-//        httpRequest.onreadystatechange = function ()
-//        httpRequest.open("GET", url + "&APPID=" + apiKey);
-//        httpRequest.send();
-//    }
-    
-/*    function responseMethod() {
-        if (httpRequest.readyState === 4) {
-            if (httpRequest.status === 200) {
-                updateUISuccess(httpRequest.responseText);
-            }
-            alert("page done loading!");
-        }
-    }
- */   //handle xhr success
+     //handle xhr success
     function updateUISuccess(responseText) {
         let response = JSON.parse(responseText);
         let conditions = response.weather[0].main;
