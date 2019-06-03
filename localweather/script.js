@@ -32,7 +32,7 @@
      
      //handle xhr success
     function updateUISuccess(responseText) {
-        let response = JSON.parse(responseText);
+        let response = JSON.parse(xhr.responseText);
         let conditions = response.weather[0].main;
         let degC = response.main.temp - 273.15;
         let degCInt = Math.floor(degC);
