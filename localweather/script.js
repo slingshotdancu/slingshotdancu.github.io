@@ -30,10 +30,10 @@
             if(xhr.readyState === 4 && xhr.status === 200) {
             console.log(xhr.responseText);
         let responseObj = JSON.parse(xhr.responseText);
-            console.log(responseObj.city.name);
+            console.log(responseObj.list.weather.description);
             weatherTitle.innerHTML = "<h2>" + responseObj.city.name + "</h2>";
-            weatherDescription.innerHTML = responseObj.list[0].weather[0].description;
-            weatherTemperature.innerHTML = responseObj.list[0].
+            weatherDescription.innerHTML = "<h3>" + responseObj.list[0].weather[0].description + "</h3>";
+            weatherTemperature.innerHTML = "<h3>" + responseObj.list[0] + "</h3>";
             }
         };
         xhr.send();
