@@ -6,7 +6,9 @@
     (function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
-        } 
+        } else {
+        alert("Your browser does not support geolocation!";
+        }
     })();
     
     function showPosition(position) {
@@ -19,11 +21,10 @@
     
     
     function makeRequest() {
-        let xhr = new XMLHttpRequest(),
-            method = "GET",
-            url = "http://api.openweathermap.org/data/2.5/forecast?id=4543762&APPID=" + apiKey;
-        
-        xhr.open(method, url, True);
+        let xhr = new XMLHttpRequest();
+        let method = "GET";
+        let urls = url + "&APPID=" + apiKey;
+        xhr.open(method, urls, true);
         xhr.onreadystatechange = function () {
             if(xhr.readyState === 4 && xhr.status === 200) {
             console.log(xhr.responseText);
