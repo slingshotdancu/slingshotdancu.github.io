@@ -1,9 +1,9 @@
 (function() {
     let url = "https://api.openweathermap.org/data/2.5/forecast?id=4543762";
     let apiKey = "3118da63bc3ab70397a7e97b0cea4af8";
-    let weatherTitle = document.getElementById("weatherTitle");
-    let weatherDescription = document.getElementById("weatherDescription");
-    let weatherTemperature = document.getElementById("weatherTemperature");
+    let weatherTitle = document.getElementById("weatherTitl");
+    let weatherDescription = document.getElementById("weatherDesc");
+    let weatherTemperature = document.getElementById("weatherTemp");
 
     makeRequest();
     
@@ -30,10 +30,10 @@
                 if(xhr.readyState === 4 && xhr.status === 200) {
                     console.log(xhr.responseText);
                     let responseObj = JSON.parse(xhr.responseText);
-                    console.log(responseObj.list.weather.description);
+                    console.log(responseObj.list[0].weather[0].description);
                     weatherTitle.innerHTML = "<h2>" + responseObj.city.name + "</h2>";
                     weatherDescription.innerHTML = "<h3>" + responseObj.list[0].weather[0].description + "</h3>";
-                    weatherTemperature.innerHTML = "<h3>" + responseObj.list[0] + "</h3>";
+              //    weatherTemperature.innerHTML = "<h3>" + responseObj.list[0] + "</h3>";
                 }
             };
         } 
