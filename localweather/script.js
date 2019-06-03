@@ -26,11 +26,15 @@
             if(xhr.readyState === 4 && xhr.status === 200) {
             console.log(xhr.responseText);
         let responseObj = JSON.parse(xhr.responseText);
-            console.log(responseObj.cod);
+            console.log(responseObj.city.name);
+        let weatherTitle = document.getElementById("weatherTitle");
+                weatherTitle.innerHTML = "<h2>" + responseObj.city.name + "</h2>";
             }
         };
         xhr.send();
      
+         
+         
      //handle xhr success
     function updateUISuccess(responseText) {
 //        let response = JSON.parse(xhr.responseText);
