@@ -32,7 +32,7 @@
         let responseObj = JSON.parse(xhr.responseText);
             console.log(responseObj.city.name);
             weatherTitle.innerHTML = "<h2>" + responseObj.city.name + "</h2>";
-            weatherDescription.innerHTML = responseObj.list[0].weather[0].description];
+            weatherDescription.innerHTML = responseObj.list[0].weather[0].description;
             weatherTemperature.innerHTML = responseObj.list[0].
             }
         };
