@@ -7,7 +7,7 @@
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
         } else {
-        alert("Your browser does not support geolocation!";
+        alert("Your browser does not support geolocation!");
         }
     })();
     
