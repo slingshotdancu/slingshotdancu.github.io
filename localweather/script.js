@@ -1,4 +1,5 @@
 (function() {
+    let xhr;
     let url = "https://api.openweathermap.org/data/2.5/forecast?id=4543762";
     let apiKey = "3118da63bc3ab70397a7e97b0cea4af8";
     let weatherTitle = document.getElementById("weatherTitl");
@@ -22,7 +23,7 @@
     }
     
      function makeRequest() {
-        let xhr = new XMLHttpRequest();
+        xhr = new XMLHttpRequest();
         let method = "GET";
         let urls = url + "&APPID=" + apiKey;
         xhr.open(method, urls);
