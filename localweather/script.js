@@ -53,5 +53,4 @@
         let weatherBox = document.getElementById("weather");
         weatherBox.innerHTML = "<p>" + degCInt + "&#176; C / " + degFInt + "&#176; F</p><p>" + condition + "</p>";
     }
-         }
 })();
