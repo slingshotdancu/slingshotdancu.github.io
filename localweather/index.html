@@ -1,18 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en" >
 
-<head>
-  <meta charset="UTF-8">
-  <title>LocalWeather</title>
-  
-  
-  
-      <link rel="stylesheet" href="styles.css">
-
-  
-</head>
-
-<body>
 
   <html>
 
@@ -23,29 +12,42 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
 
 <body>
     <div class="container-fluid">
-    <h1 class="text-center" id="p1">Local Weather Conditions</h1>
-    <h2 class="text-center" id="location"></h2>
+        <h1 class="text-center" id="p1">Local Weather Conditions</h1>
+        <br>
+        <h2 id="location"></h2>
         <div class="text-center">
-        <h6 class="text-center" id="conditions">Conditions</h6>
-     <img class="text-center" id="icon" />
-    </div>
+            <h6 class="text-center" id="conditions"></h6>
+            <img class="text-center" id="icon" />
+        </div>
     
-    <div id="temps" class="text-center">
-        <h5 class="d-inline" id="Ftemp"></h5>
-        <h5 class="d-inline" id="Ctemp" style="visibility: hidden"></h5>
-    </div>
+        <br><br><br><br>
+        <div id="temps" class="text-center">
+            <h5 class="d-inline" id="Ftemp"></h5>
+            <h5 class="d-inline" id="Ctemp" style="visibility: hidden"></h5>
+        </div>
+
         <div class="text-center">
         <div class="btn-group">
-    <button class="btn btn-dark" onclick="tempf()">&degF</button><button class="btn btn-dark" onclick="tempc()">&degC</button>
-    </div></div>
+            <button class="btn btn-sm btn-dark" onclick="tempf()">&degF</button>
+            <button class="btn btn-sm btn-dark" onclick="tempc()">&degC</button>
+        </div>
+        </div>
+        <br><br><br><br><br>
+        <div class="text-center">
+            <button type="button" class="btn btn-lg btn-dark" onclick="getGeolocation()">Get Weather</button>
+        </div>
+
+    </div>
     
     <script>
         var long;
         var lat;
+
         function tempf() {
             document.getElementById("Ctemp").style.visibility = "hidden";
             document.getElementById("Ftemp").style.visibility = "visible";
@@ -54,7 +56,7 @@
             document.getElementById("Ftemp").style.visibility = "hidden";
             document.getElementById("Ctemp").style.visibility = "visible";
         }
-        $(document).ready(function() {
+        function getGeolocation() {
             //getting geolocation
             (function getLocation() {
                 if (navigator.geolocation) {
@@ -63,12 +65,15 @@
                    alert("Geolocation is not supported by this browser.");
                 }
             })();
+
             //displaying lat and long
             function showPosition(position) {
             console.log("Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude); 
+
             //returning as a float, because server requires number/float    
             long = parseFloat(position.coords.longitude);
             lat = parseFloat(position.coords.latitude);
+
             //MAKING SURE IT'S A FLOAT
             console.log(typeof(long));
             
@@ -78,7 +83,8 @@
                 var fahrenheit = (celsius*(9/5))+32;
                 var fTemp = document.getElementById("Ftemp");
                 var cTemp = document.getElementById("Ctemp");
-                
+                fTemp.style.backgroundColor = "black";
+                cTemp.style.backgroundColor = "black";
                 fTemp.innerHTML = fahrenheit.toFixed(2) + "&degF";
                 cTemp.innerHTML = celsius.toFixed(2) + "&degC";
                 
@@ -167,7 +173,7 @@
         961: "violent storm",
         962: "hurricane"
     }
-           });
+           }
     </script>
     </div>
     </body>        
@@ -175,5 +181,3 @@
 </html>
   
   
-
-</body>
