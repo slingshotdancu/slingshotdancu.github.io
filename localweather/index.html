@@ -153,4 +153,178 @@
       icons.play();
     </script>
   </body>
+</html><!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>LocalWeather</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <html>
+
+<head>
+<meta charset="utf-8" lang="en">
+<meta name="viewport" content="width=device-width, initial-scale-1.0">
+<title></title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    </head>
+
+<body>
+    <div class="container-fluid">
+    <h1 class="text-center" id="p1">Local Weather Conditions</h1>
+    <h2 class="text-center" id="location"></h2>
+        <div class="text-center">
+        <h6 class="text-center" id="conditions">Conditions</h6>
+     <img class="text-center" id="icon" />
+    </div>
+    
+    <div id="temps" class="text-center">
+        <h5 class="d-inline" id="Ftemp"></h5>
+        <h5 class="d-inline" id="Ctemp" style="visibility: hidden"></h5>
+    </div>
+        <div class="text-center">
+        <div class="btn-group">
+    <button class="btn btn-dark" onclick="tempf()">&degF</button><button class="btn btn-dark" onclick="tempc()">&degC</button>
+    </div></div>
+    
+    <script>
+        var long;
+        var lat;
+        function tempf() {
+            document.getElementById("Ctemp").style.visibility = "hidden";
+            document.getElementById("Ftemp").style.visibility = "visible";
+        }
+        function tempc() {
+            document.getElementById("Ftemp").style.visibility = "hidden";
+            document.getElementById("Ctemp").style.visibility = "visible";
+        }
+        $(document).ready(function() {
+            //getting geolocation
+            (function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                   alert("Geolocation is not supported by this browser.");
+                }
+            })();
+            //displaying lat and long
+            function showPosition(position) {
+            console.log("Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude); 
+            //returning as a float, because server requires number/float    
+            long = parseFloat(position.coords.longitude);
+            lat = parseFloat(position.coords.latitude);
+            //MAKING SURE IT'S A FLOAT
+            console.log(typeof(long));
+            
+            //get request to server printing the data to the console...that's it right now.    
+            $.get("https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&lon=" + long, function(data) {
+                var celsius = data.main.temp;
+                var fahrenheit = (celsius*(9/5))+32;
+                var fTemp = document.getElementById("Ftemp");
+                var cTemp = document.getElementById("Ctemp");
+                
+                fTemp.innerHTML = fahrenheit.toFixed(2) + "&degF";
+                cTemp.innerHTML = celsius.toFixed(2) + "&degC";
+                
+                var conditions = document.getElementById("conditions");
+                conditions.innerHTML = data.weather[0].description;
+                var location = document.getElementById("location");
+                location.innerHTML = "Location: " + data.name;
+                console.log(data);
+                var icon = document.getElementById("icon");
+                icon.src = data.weather[0].icon;
+            });
+            }
+            
+            //ignore
+            var weatherConditions = {
+        200: "thunderstorm with light rain",
+        201: "thunderstorm with rain",
+        202: "thunderstor with heavy rain",
+        210: "light thunderstorm",
+        211: "thunderstorm",
+        212: "heavy thunderstorm",
+        221: "ragged thunderstorm",
+        230: "thunderstorm with light drizzle",
+        231: "thunderstorm with drizzle",
+        232: "thunderstorm with heavy drizzle",
+        300: "light intensity drizzle",
+        301: "drizzle",
+        302: "heavy intensity drizzle",
+        310: "light intensity drizzle rain",
+        311: "drizzle rain",
+        312: "heavy intensity drizzle rain",
+        313: "shower rain and drizzle",
+        314: "heavy shower rain and drizzle",
+        321: "shower drizzle",
+        500: "light rain",
+        501: "moderate rain",
+        502: "heavy intensity rain",
+        503: "very heavy rain",
+        504: "extreme rain",
+        511: "freezing rain",
+        520: "light intensity shower rain",
+        521: "shower rain",
+        522: "heavy intensity shower rain",
+        531: "ragged shower rain",
+        600: "light snow",
+        601: "snow",
+        602: "heavy snow",
+        611: "sleet",
+        612: "shower sleet",
+        615: "light rain and snow",
+        616: "rain and snow",
+        620: "light shower snow",
+        621: "shower snow",
+        622: "heavy shower snow",
+        701: "mist",
+        711: "smoke",
+        721: "haze",
+        731: "sand, dust whirls",
+        741: "fog",
+        751: "sand",
+        761: "dust",
+        771: "squalls",
+        781: "tornado",
+        800: "clear sky",
+        801: "few clouds",
+        802: "scattered clouds",
+        803: "broken clouds",
+        804: "overcast clouds",
+        900: "tornado",
+        901: "tropical storm",
+        902: "hurricane",
+        903: "cold",
+        904: "hot",
+        905: "windy",
+        906: "hail",
+        951: "calm",
+        952: "light breeze",
+        953: "gentle breeze",
+        954: "moderate breeze",
+        955: "fresh breeze", 
+        956: "strong breeze",
+        957: "high wind, near gale",
+        958: "gale",
+        959: "severe gale",
+        960: "storm",
+        961: "violent storm",
+        962: "hurricane"
+    }
+           });
+    </script>
+    </div>
+    </body>        
+    
 </html>
