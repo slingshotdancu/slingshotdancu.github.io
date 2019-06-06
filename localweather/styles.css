@@ -1,0 +1,44 @@
+html {
+  background: url(http://www.danieljobe.com/local-weather/weather.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#p1 {
+  color: white;
+  font-size: 600%;
+}
+
+#temps {
+  display: inline-block;
+  padding: .5% .5% .5% .5%;
+  border-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10em;
+}
+
+div {
+  float: right;
+}
+
+#location {
+  display: inline-block;
+  color: white;
+ font-size: 3em;
+}
+#Ftemp, #Ctemp {
+  font-size: 2em;
+  display: block;
+  color: white;
+}
+#temps {
+display: inline-block;
+}
+#conditions {
+  font-size: 3em;
+  color: white;
+  display: block;
+}
