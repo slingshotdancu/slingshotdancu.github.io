@@ -1,1 +1,108 @@
-<mxfile host="app.diagrams.net" modified="2021-07-08T18:33:34.685Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="CKFFiX-W6rKa-P-D_wkv" version="14.8.5" type="github"><diagram id="vZ8tYnkM7WGZsM2im86g" name="Page-1">7VpZb+M2EP41BtqHBJQoH3nM3QLb7rZB280jLdESu5SoUvTVX79DidTt2JvYcQwYCBBpZnhovuE3Q9IDfBuvHiVJo99EQPnARcFqgO8Grut4rjvQfyhYF5IxGhaCULLAGFWCJ/Y/NUJkpHMW0KxhqITgiqVNoS+ShPqqISNSimXTbCZ4c9SUhLQjePIJ70r/YYGKCulkiCr5L5SFkR3ZQUYTE2tsBFlEArGsifD9AN9KIVTxFK9uKdfOs34p2j1s0JYTkzRRuzT48+7xE2br1V+Tz4ubP64f/yZ4eIGLXhaEz80H3xFF8tmKObjKRVOq9SxjU3CJ+5DAdPVAo//meuI3vyaKyoTogT4nfF0pzEertfWkFPMkoHoyDqiXEVP0KSW+1i4hdkAWqZgb9UwkygQDRAK+WVCpGKByzVmYgDBmQaA7LgzNIMbR2pauNnrJKX0PQUtFTJWEaSPTwJuYXky8Oti8Lyv0HQtpVEPe2hETcGHZdYUJPBhYfgCicQeiZ1gQbe/CF6umCzMlxTd6K7iQIElEkruLcd4SEeNSn2ooX/J1H2YVqqgHNikUUUwkdbWZs7MHsLDXBGsy7GCFe6ByDgXVVQeq38UZKa0dohZS3VXl9SDlHgopGwI1qB6Ir8DbkEpIYnlvxkkY0iBPHFolaSwWmuxOktswboLgDnfkNu9gMIw6MFwH2t3QPQmKTGQ9n3JwaKw/FUoAFutkBBYaJZLoJpCypSrtfc7AFHgSzTOWhLpNlCNqUH53APexilxbPBkAPW9HAMeHAtD1Oq6kARRQ5lVIFYlQQH1wX0lbTFTZfBIiNS7+lyq1Nj4mcyWaANAVU19Nc/38rJ8vh+btblVT3a1rL1+ohMDJubOXBItv0R/wMkDwvWIuffpSZJu0rYgMqXrJgxsgl5QDIS+aM9k/fuNj4ue8ET9ARa6/Vo3163NdV3WVv60/EO74mLA73aISKneu65IszdNfFRC2oNdOu1gaUrkGkzFC9XJ/FOb7gaykWsPfkiomdQ59ENNMcIBvgB/saCAtBixad4KxKI3szstt1U0RSbVdvAr15vNyxsXSj4hUlwH1Yceiq5leLt+ZwPeRdMfNpNtH2U5fkXqwKtUdngxnf7z1XR5CbOV195gLHDvHxPiHeP2UMX4riedNr6Uk65pBKlheuZY9f9GC2hFFi1Gcq2E9Xrba4xFqxVcxgyrayk95A8nYevcdMow9ndo9rchIxNN5tsdSfx/V/VUL157t2VVPprg6WKIYnRPF60nEfS8SeRvGk1NJFB8BKwcdFSu3j1MHLjb+qD++zLR+cbCoOVaG05/gq2BGyP77Oe8C5XQ8IzHj68I0onxBNf3V9FmOiNY6KF3VFcWgWpMIGRNe07U5PtfAzgB2dhcwZ18f2HRa6nPTC3MEqnXlKajVMYjJxPRaziXXKEmSbAZ92V6TgrLRUsigOWLZcEr8b2Ee6Bctb7nepHCU612Zh6H1WcCylBPjL5ZwZkeCvQlRreG3ZzZ/LnU087w88IsI25zk+kPhJFKf2zqZ7Ll16Ut9k0OlPozPqe/1dIp3pdPRUem0e/n5CuKsuLOiTxdtYFDoiMRprsTY0+CXlNrWNDtp0WxT12HahrpTUG/nW2uygXIb6jbrNpR9xGsN+rnXarfQL6oxMKqRsG3ex8OlV1pU3OXh2cBc9ehjq9uchvJwAm6Wup/8bii/ZmBZTUy4pCTIuXpQ3TTYq4uK3MsTsYLmT3zbgof928tjnnB1L2LPd+Y21Y5au8yeq9i+S/ODXcXawc5gdcFyWr9GcXvWVt+9+cFWFu5uQc4/cbA4bF9Y7/obB+ydF9bms7bWTTo6GAvCa/Ujv+J4tfqpJL7/Dg==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-07-08T21:05:58.952Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="Z1Sm1d9NDMcXijb5H7fV" version="14.8.5" type="github">
+  <diagram id="vZ8tYnkM7WGZsM2im86g" name="Page-1">
+    <mxGraphModel dx="474" dy="254" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-3" value="Data should be visible/not &quot;Internal Only&quot;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;verticalAlign=middle;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="490" y="180" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-7" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;rotation=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="330" y="130" width="30" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-9" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;rotation=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="490" y="130" width="40" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-10" value="Factor can be flagged for removal" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;verticalAlign=middle;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="305" y="315" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-16" value="Add metadata for replacement time/date and alert for clients using the factor" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;verticalAlign=middle;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="165" y="490" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=10;" parent="1" source="RDGL3iyxU8OvBQAGVa35-17" target="RDGL3iyxU8OvBQAGVa35-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;" parent="1" source="RDGL3iyxU8OvBQAGVa35-17" target="RDGL3iyxU8OvBQAGVa35-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-17" value="&lt;span style=&quot;font-weight: 700&quot;&gt;Is the data retired/obsolete?&lt;/span&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontSize=10;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="370" y="90" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;" parent="1" source="RDGL3iyxU8OvBQAGVa35-21" target="RDGL3iyxU8OvBQAGVa35-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;" parent="1" source="RDGL3iyxU8OvBQAGVa35-21" target="RDGL3iyxU8OvBQAGVa35-23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="245" />
+              <mxPoint x="430" y="390" />
+              <mxPoint x="365" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-21" value="&lt;span style=&quot;font-weight: 700&quot;&gt;Is the data visible?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="270" y="200" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;" parent="1" source="RDGL3iyxU8OvBQAGVa35-22" target="RDGL3iyxU8OvBQAGVa35-23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="330" />
+              <mxPoint x="150" y="390" />
+              <mxPoint x="365" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=10;" parent="1" source="RDGL3iyxU8OvBQAGVa35-22" target="RDGL3iyxU8OvBQAGVa35-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-22" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 10px; font-style: normal; font-weight: 700; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;Is the data currently active?&lt;/span&gt;&#xa;&#xa;" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="190" y="290" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;" parent="1" source="RDGL3iyxU8OvBQAGVa35-23" target="RDGL3iyxU8OvBQAGVa35-16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="225" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-23" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 10px ; font-style: normal ; font-weight: 700 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;If removed, will there be or is there already a factor replaces the retired data?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="310" y="420" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-29" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;rotation=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="238" y="230" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-30" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;rotation=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="150" y="315" width="40" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-32" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;rotation=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="370" y="230" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RDGL3iyxU8OvBQAGVa35-34" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;rotation=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="255" y="460" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="b6A6RoxEltREsrSATFP2-2" value="Is the data currently active in" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="550" y="290" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="b6A6RoxEltREsrSATFP2-3" value="Portfolio Analytics?" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="530" y="380" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b6A6RoxEltREsrSATFP2-4" value="Data Feeds?" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="610" y="380" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b6A6RoxEltREsrSATFP2-5" value="Alerts?" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="660" y="340" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b6A6RoxEltREsrSATFP2-6" value="Screener?" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="480" y="340" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b6A6RoxEltREsrSATFP2-7" value="Retiring and Removing Data from DataDesk Platform" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=17;fontStyle=0;labelBackgroundColor=none;labelBorderColor=none;spacingTop=4;spacing=4;spacingLeft=4;spacingBottom=4;spacingRight=4;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;shadow=1;glass=0;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="268" y="10" width="315" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
