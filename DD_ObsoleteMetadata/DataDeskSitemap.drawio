@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-07-12T16:31:32.156Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="vou8qEJfgPfDGbLOKNKe" version="14.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-12T16:48:55.565Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="W22yoi9nlZk7UL2wL8sa" version="14.8.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="569" dy="305" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -375,13 +375,16 @@
           <mxGeometry width="123.5" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Q6NvDaof21Lmz1zF1uVE-111" value="Analysis" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;fillColor=#075a82;fontColor=#FFFFFF;fontSize=12;" parent="Q6NvDaof21Lmz1zF1uVE-193" vertex="1">
-          <mxGeometry x="3.5" y="130" width="120" height="30" as="geometry" />
+          <mxGeometry x="0.43999999999999995" y="140" width="120" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Q6NvDaof21Lmz1zF1uVE-112" value="As-of-Date" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;fillColor=#075a82;fontColor=#FFFFFF;" parent="Q6NvDaof21Lmz1zF1uVE-193" vertex="1">
           <mxGeometry x="1.75" y="50" width="120" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="w-_JFtuls0eAX1BSivLM-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;" edge="1" parent="Q6NvDaof21Lmz1zF1uVE-193" source="Q6NvDaof21Lmz1zF1uVE-28" target="w-_JFtuls0eAX1BSivLM-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Q6NvDaof21Lmz1zF1uVE-28" value="Portfolio" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c1e4f7;shadow=1;" parent="Q6NvDaof21Lmz1zF1uVE-193" vertex="1">
-          <mxGeometry x="3.5" y="70" width="116.5" height="20" as="geometry" />
+          <mxGeometry x="3.06" y="80" width="117.37" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Q6NvDaof21Lmz1zF1uVE-110" value="Climate Report - Equity" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;fillColor=#075a82;fontColor=#FFFFFF;fontSize=10;" parent="Q6NvDaof21Lmz1zF1uVE-193" vertex="1">
           <mxGeometry x="1.75" y="180" width="120" height="30" as="geometry" />
@@ -409,6 +412,9 @@
         </mxCell>
         <mxCell id="Q6NvDaof21Lmz1zF1uVE-102" value="SDG Impact and Solutions Report" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;fillColor=#075a82;fontColor=#FFFFFF;fontSize=10;" parent="Q6NvDaof21Lmz1zF1uVE-193" vertex="1">
           <mxGeometry x="1.75" y="420" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w-_JFtuls0eAX1BSivLM-19" value="Select Portfolios" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;fillColor=#E6E6E6;fontSize=12;" vertex="1" parent="Q6NvDaof21Lmz1zF1uVE-193">
+          <mxGeometry x="1.75" y="113" width="117.37" height="17" as="geometry" />
         </mxCell>
         <mxCell id="Q6NvDaof21Lmz1zF1uVE-194" value="" style="group" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1" connectable="0">
           <mxGeometry x="350" y="20" width="120" height="990" as="geometry" />
@@ -831,7 +837,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="660" y="560" />
-              <mxPoint x="660" y="165" />
+              <mxPoint x="660" y="170" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -839,7 +845,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="660" y="700" />
-              <mxPoint x="660" y="165" />
+              <mxPoint x="660" y="170" />
             </Array>
           </mxGeometry>
         </mxCell>
