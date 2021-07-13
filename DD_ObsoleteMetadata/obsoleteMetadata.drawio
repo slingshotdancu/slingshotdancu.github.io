@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-07-13T18:46:08.539Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="zQKL7GrVyL6-vuuAkYQi" version="14.8.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-13T18:48:31.702Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="XYViPlKtIpHWKiWxE63Q" version="14.8.6" type="github">
   <diagram id="vZ8tYnkM7WGZsM2im86g" name="Page-1">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="1">
+    <mxGraphModel dx="331" dy="177" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,7 +17,7 @@
           <mxGeometry x="383" y="395" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="RDGL3iyxU8OvBQAGVa35-16" value="Add metadata for replacement time/date if needed, or directly replace data" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;verticalAlign=middle;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="300" y="650" width="120" height="70" as="geometry" />
+          <mxGeometry x="335" y="650" width="120" height="70" as="geometry" />
         </mxCell>
         <mxCell id="RDGL3iyxU8OvBQAGVa35-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=10;" parent="1" source="RDGL3iyxU8OvBQAGVa35-17" target="RDGL3iyxU8OvBQAGVa35-21" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -75,7 +75,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="425" y="630" />
-              <mxPoint x="360" y="630" />
+              <mxPoint x="395" y="630" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -83,7 +83,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="535" y="630" />
-              <mxPoint x="590" y="630" />
+              <mxPoint x="563" y="630" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -97,7 +97,7 @@
           <mxGeometry x="370" y="230" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="RDGL3iyxU8OvBQAGVa35-34" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;rotation=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="380" y="610" width="30" height="20" as="geometry" />
+          <mxGeometry x="395" y="610" width="30" height="20" as="geometry" />
         </mxCell>
         <mxCell id="2NBuemxUmUWTqyVCSJ8C-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="b6A6RoxEltREsrSATFP2-3" target="RDGL3iyxU8OvBQAGVa35-23">
           <mxGeometry relative="1" as="geometry">
@@ -212,14 +212,14 @@
         <mxCell id="2NBuemxUmUWTqyVCSJ8C-1" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;rotation=0;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="235" y="460" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="2NBuemxUmUWTqyVCSJ8C-4" value="Data can be safely removed" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=10;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="530" y="665" width="120" height="40" as="geometry" />
+        <mxCell id="2NBuemxUmUWTqyVCSJ8C-4" value="Data can be safely archived and removed from visibility" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="503" y="650" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="2NBuemxUmUWTqyVCSJ8C-6" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;rotation=0;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="543" y="610" width="40" height="20" as="geometry" />
+          <mxGeometry x="530" y="610" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="2NBuemxUmUWTqyVCSJ8C-7" value="Data should be given a retirement date alerted to clients, at which point retired data can be archived and removed from client visibility" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="138" y="650" width="120" height="80" as="geometry" />
+          <mxGeometry x="155" y="650" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="2NBuemxUmUWTqyVCSJ8C-9" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;rotation=0;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="205" y="460" width="30" height="20" as="geometry" />
