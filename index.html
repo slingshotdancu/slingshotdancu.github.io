@@ -1,43 +1,271 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection"/>
+<html lang="en">
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Check back soon!</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Jobe | Candidate Profile</title>
+  <style>
+    :root {
+      --primary-color: #6c5ce7; /* Bold purple */
+      --neutral-dark: #1e1e1e;
+      --neutral-light: #f7f7f7;
+      --text-color: var(--neutral-light);
+      --bg-color: var(--neutral-dark);
+      --transition: 0.3s ease;
+    }
+
+    body.light-mode {
+      --text-color: #111;
+      --bg-color: white;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background-color var(--transition), color var(--transition);
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.9)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5em;
+      transition: var(--transition);
+    }
+
+    header p {
+      font-size: 1.3rem;
+      color: #eee;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(30, 30, 30, 0.95);
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav .links {
+      display: flex;
+      gap: 2em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: var(--transition);
+    }
+
+    nav a:hover {
+      color: var(--primary-color);
+    }
+
+    .toggle-btn {
+      background: var(--primary-color);
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: var(--transition);
+      color: white;
+    }
+
+    .toggle-btn:hover {
+      background: linear-gradient(to right, #5f27cd, #6c5ce7);
+    }
+
+    section {
+      padding: 5em 2em;
+      background-color: var(--bg-color);
+      transition: background-color var(--transition);
+    }
+
+    .highlight {
+      background-color: rgba(20, 20, 20, 0.9);
+      border-radius: 12px;
+      padding: 2em;
+      margin: 2em auto;
+      max-width: 900px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: background-color var(--transition);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8em 1.5em;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: linear-gradient(to right, #5f27cd, #6c5ce7);
+    }
+
+    .parallax {
+      background: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat fixed;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .parallax h2 {
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      background-color: #111;
+      color: #aaa;
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: white;
+      max-width: 80vw;
+      max-height: 80vh;
+      border-radius: 8px;
+      overflow: auto;
+    }
+
+    .modal-content iframe {
+      width: 100%;
+      height: 80vh;
+      border: none;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
-<body class="black">
-    <div class="container">
-        <div class="row">
-            <div class="col-s4 m4 l4">
-                <div class="card-panel grey darken-4">
-                    <hr>
-                    <p class="flow-text grey-text text-lighten-5">Hey there, fellow music aficionados! Hold onto your strings because MusicBox is gearing up to launch an incredible website just for you. We're fine-tuning every note, pixel, and witty joke to make your musical journey unforgettable. Stay tuned for updates, and get ready to rock like never before!</p>
-                    <hr>
-                </div>
-            </div>
-            <div class="col-s4 m4 l4"></div>
-        </div>
+<body>
+  <nav>
+    <div class="links">
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About Me</a>
     </div>
-    <div class="row">
-        <div class="col-s3 m3 l3"></div>
-        <div class="col-s6 m6 l6"></div>
-        <div class="col-s3 m3 l3"></div>
+    <button class="toggle-btn" onclick="toggleMode()">Toggle Dark Mode</button>
+  </nav>
+
+  <header>
+    <div>
+      <h1>Daniel Jobe</h1>
+      <p>Product Manager | ESG Data Leader | Candidate for Impact</p>
     </div>
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.materialboxd');
-            var instances = M.Materialbox.init(elems, options);
-        });
-    </script>  
+  </header>
+
+  <section id="about">
+    <div class="highlight">
+      <h2>About Me</h2>
+      <p>I bring deep experience leading data platforms in the ESG space, bridging development and client-facing functions to deliver scalable, transparent, and impactful data solutions. This site is your first look into the candidate who delivers results across product, engineering, and strategy.</p>
+    </div>
+  </section>
+
+  <div class="parallax">
+    <h2>Resume & Credentials</h2>
+  </div>
+
+  <section id="resume">
+    <div class="highlight">
+      <p>You can view my resume directly below:</p>
+      <button class="btn" onclick="openModal()">View Resume</button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="highlight">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:daniel.jobe@example.com" style="color: var(--primary-color);">daniel.jobe@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/danieljobe" target="_blank" style="color: var(--primary-color);">linkedin.com/in/danieljobe</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Daniel Jobe</p>
+  </footer>
+
+  <!-- Resume Modal -->
+  <div id="resumeModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+    <iframe src="https://raw.githubusercontent.com/slingshotdancu/slingshotdancu.github.io/master/Resume.pdf"></iframe>
+    </div>
+  </div>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('light-mode');
+    }
+
+    function openModal() {
+      document.getElementById('resumeModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('resumeModal').style.display = 'none';
+    }
+
+    window.onclick = function (event) {
+      const modal = document.getElementById('resumeModal');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    }
+  </script>
 </body>
+
 </html>
-
-
